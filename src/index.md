@@ -3,8 +3,7 @@
 layout: home
 
 hero:
-  name: "Marlon C"
-  text: "Bizuário de Química"
+  name: "Bizuário de Química"
   tagline: Anotações, resumos e macetes — tudo que você precisa lembrar, num lugar só.
   icon: 🧬
   image:
@@ -24,8 +23,11 @@ hero:
 features:
   - title: 🧪 Química Orgânica
     details: Hidrocarbonetos, álcoois, funções orgânicas, reações e nomenclatura IUPAC
+    link: /organica/intro
   - title: ⚗️ Química Geral e Inorgânica
     details: Estrutura atômica, tabela periódica, ligações químicas e reações inorgânicas
+    link: /geral/atomos
   - title: 🔬 Físico-Química
     details: Termoquímica, cinética, equilíbrio químico e eletroquímica
+    link: /fisico/termoquimica
 ---

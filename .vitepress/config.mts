@@ -6,7 +6,7 @@ import mathjax3 from 'markdown-it-mathjax3'
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
-  title: "Marlon C",
+  title: "Bizuário",
   description: "Bizuário de Química",
   srcDir: 'src',
   base: '/',
