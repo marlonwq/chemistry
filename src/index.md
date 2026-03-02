@@ -3,27 +3,29 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
-  icon: 🛠️
+  name: "Marlon C"
+  text: "Bizuário de Química"
+  tagline: Anotações, resumos e macetes — tudo que você precisa lembrar, num lugar só.
+  icon: 🧬
   image:
-    src: ./bg.svg
-    alt: Banner
+    src: ./atom.svg
+    alt: Átomo
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Química Orgânica
+      link: /organica/intro
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Química Geral
+      link: /geral/atomos
+    - theme: alt
+      text: Físico-Química
+      link: /fisico/termoquimica
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 🧪 Química Orgânica
+    details: Hidrocarbonetos, álcoois, funções orgânicas, reações e nomenclatura IUPAC
+  - title: ⚗️ Química Geral e Inorgânica
+    details: Estrutura atômica, tabela periódica, ligações químicas e reações inorgânicas
+  - title: 🔬 Físico-Química
+    details: Termoquímica, cinética, equilíbrio químico e eletroquímica
 ---
-
