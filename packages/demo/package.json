@@ -1,0 +1,24 @@
+{
+  "name": "vitepress-carbon-demo",
+  "version": "1.0.0",
+  "description": "Demo for VitePress Carbon theme.",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "vitepress dev",
+    "build": "pnpm run demo-build",
+    "demo-build": "vitepress build",
+    "demo-preview": "vitepress preview",
+    "serve": "pnpm run demo-build && vitepress serve"
+  },
+  "dependencies": {
+    "@types/node": "^25.5.0",
+    "vitepress-carbon": "link:../theme"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^5.2.0"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.18.0"
+  },
+  "packageManager": "pnpm@9.9.0"
+}

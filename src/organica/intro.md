@@ -139,5 +139,5 @@ $$GI = \frac{2n + 2 - m}{2} \quad \text{(para } C_n H_m\text{)}$$
 Meteno é um alceno, teoricamente falando — porque acaba em **eno**.
 Alceno é caracterizado por 1 ou mais ligações duplas entre carbonos.
 Se há 1 "meteno" → "met" → só há **1 carbono**.
-Portanto, é impossível haver ligação dupla entre 2 carbonos se só existe 1. ∎
+Portanto, é impossível haver ligação dupla entre 2 carbonos se só existe 1 carbono.
 

@@ -1,17 +1,37 @@
 {
-  "name": "vitepress-carbon-template",
-  "version": "0.0.1",
-  "description": "VitePress Carbon Template",
+  "name": "bizuario-de-quimica",
+  "version": "1.0.0",
+  "description": "Bizuário de Química - Notas de Estudo para o ITA",
+  "type": "module",
+  "private": true,
   "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:build": "vitepress build"
   },
   "dependencies": {
-    "vitepress": "^1.4.0",
-    "vitepress-carbon": "^1.5.0"
+    "vitepress": "^1.6.4",
+    "vitepress-carbon": "^1.6.0",
+    "vue": "^3.5.30",
+    "@algolia/client-search": "^5.49.2",
+    "search-insights": "^2.17.3",
+    "mark.js": "^8.11.1"
   },
   "devDependencies": {
-    "markdown-it-mathjax3": "^4.3.2"
+    "markdown-it-mathjax3": "^4.3.2",
+    "typescript": "^5.9.3",
+    "@types/node": "^25.5.0"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.18.0"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "vitepress-carbon"
+    ]
   }
 }
