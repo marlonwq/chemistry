@@ -11,7 +11,7 @@ title: Soluções
 ### Solução
 Mistura homogênea de duas ou mais substâncias. A substância em menor quantidade (geralmente) é o **soluto**; a em maior quantidade é o **solvente**.
 
-### Classificação quanto à量 de Soluto
+### Classificação quanto à quantidade de Soluto
 
 | Tipo | Definição |
 |------|-----------|

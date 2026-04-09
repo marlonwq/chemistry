@@ -1,0 +1,51 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  release:
+    if: github.event_name == 'release' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    name: Release
+    steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@fa2e9d605c4eeb9fcad4c99c224cee0c6c7f3594 # v2.16.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v5.0.0
+        with:
+          version: 9.9.0
+
+      - name: Set node version to 24
+        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+        with:
+          node-version: 24.14.0
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+
+      - name: Prepare
+        run: pnpm install --frozen-lockfile
+
+      - name: Publish vitepress-carbon
+        working-directory: packages/theme
+        run: |
+          PACKAGE_DIST_TAG=$(node -e "console.log(/^\d+\.\d+\.\d+(-([0-9A-Za-z-]+)\.\d+)?$/.exec(require('./package.json').version)?.[2] || 'latest')")
+          pnpm publish --access public --tag "$PACKAGE_DIST_TAG" --provenance --no-git-checks
+
+      - name: Publish vpcar
+        working-directory: packages/cli
+        run: |
+          PACKAGE_DIST_TAG=$(node -e "console.log(/^\d+\.\d+\.\d+(-([0-9A-Za-z-]+)\.\d+)?$/.exec(require('./package.json').version)?.[2] || 'latest')")
+          pnpm publish --access public --tag "$PACKAGE_DIST_TAG" --provenance --no-git-checks

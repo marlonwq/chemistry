@@ -3,8 +3,7 @@ import type { ThemeConfig } from 'vitepress-carbon'
 import baseConfig from 'vitepress-carbon/config'
 import mathjax3 from 'markdown-it-mathjax3'
 
-// https://vitepress.dev/reference/site-config
-export default defineConfigWithTheme<ThemeConfig>({
+export default defineConfigWithTheme<any>({
   extends: baseConfig,
   title: "Bizuário",
   description: "Bizuário de Química",
@@ -16,6 +15,23 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   themeConfig: {
     logo: '/atom.svg',
+
+    outline: {
+      label: 'Nesta página'
+    },
+
+    // @ts-ignore
+    carbon: {
+      llms: {
+        actionLabel: 'Markdown',          
+        copyLabel: 'Copiar Markdown',
+        copiedLabel: 'Copiado!',           
+        downloadLabel: 'Baixar Markdown',
+        llmsTxtLabel: 'Abrir llms.txt',    
+        llmsFullTxtLabel: 'Abrir llms-full.txt' 
+      }
+    },
+
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Química Orgânica', link: '/organica/intro' },
@@ -72,4 +88,4 @@ export default defineConfigWithTheme<ThemeConfig>({
       { icon: 'github', link: 'https://github.com/marlonwq/chemistry' }
     ]
   }
-})
+}) 

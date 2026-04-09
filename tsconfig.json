@@ -9,7 +9,16 @@
     "allowJs": true,
     "strict": true,
     "jsx": "preserve",
-    "baseUrl": "./.vitepress"
+    "baseUrl": ".",
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "types": ["vite/client"]
   },
-  "include": ["env.d.ts", "src/**/*", ".vitepress/**/*"]
+  "include": [
+    "env.d.ts",
+    ".vitepress/**/*",
+    "src/**/*",
+    "**/*.md"
+  ]
 }
