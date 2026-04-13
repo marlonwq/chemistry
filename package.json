@@ -22,7 +22,7 @@
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
     "typescript": "^5.9.3",
-    "@types/node": "^25.5.0"
+    "@types/node": "^25.6.0"
   },
   "engines": {
     "node": "^20.19.0 || >=22.18.0"
