@@ -14,7 +14,7 @@
   "dependencies": {
     "vitepress": "^1.6.4",
     "vitepress-carbon": "^1.6.0",
-    "vue": "^3.5.30",
+    "vue": "^3.5.33",
     "@algolia/client-search": "^5.49.2",
     "search-insights": "^2.17.3",
     "mark.js": "^8.11.1"
