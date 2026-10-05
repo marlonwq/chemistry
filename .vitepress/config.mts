@@ -8,7 +8,7 @@ export default defineConfigWithTheme<any>({
   title: "Bizuário",
   description: "Bizuário de Química",
   srcDir: 'src',
-  base: '/',
+  base: process.env.GITHUB_PAGES === 'true' ? '/chemistry/' : '/',
   markdown: {
     config: (md) => { md.use(mathjax3) }
   },
@@ -88,4 +88,4 @@ export default defineConfigWithTheme<any>({
       { icon: 'github', link: 'https://github.com/marlonwq/chemistry' }
     ]
   }
-}) 
+})

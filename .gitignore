@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Dependencies
 node_modules/
 bower_components/
@@ -63,19 +62,6 @@ Thumbs.db
 .pnp.*
 package-lock.json
 yarn.lock
-pnpm-lock.yaml
-=======
 /coverage
-/node_modules
-dist
 TODOs.md
-.DS_Store
-packages/demo/.vitepress/cache
-.vscode/
-.idea/
-packages/demo/.vitepress/dist/
-package-lock.json
 !pnpm-lock.yaml
-/packages/**/node_modules
-/packages/cli/docs/
->>>>>>> upstream/main
